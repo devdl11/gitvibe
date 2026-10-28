@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vgit-client"
+version = "0.1.0"
+description = "Lossy version control for code that exists mostly as a vibe."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+vgit = "vgit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
